@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FreshPod</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="App.css" />
+    
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <div class="top">
+      <div id="myNavbar">
+        <section class="header">
+          <nav>
+            <a
+              style="
+                text-decoration: none;
+                float: left;
+                display: block;
+                color: white;
+                font-size: 20px;
+                font-style: italic;
+                font-family: 'Times New Roman', Times, serif;
+              "
+              href="index.html"
+              >FreshPod</a
+            >
+            <div class="nav-links">
+              <ul>
+                <li><a href="#abt">ABOUT</a></li>
+                <li><a href="#team">TEAM</a></li>
+                <li><a href="#work">WORK</a></li>
+                <li><a href="#cont">CONTACT</a></li>
+              </ul>
+            </div>
+          </nav>
+        </section>
+      </div>
+    </div>
+    <!------ About ------->
+    <section id="abt">
+      <div class="about">
+        <h1>ABOUT THE COMPANY</h1>
+        <p>key features of our company</p>
+      </div>
+      <div class="about2">
+        <div class="Responsive">
+          <img src="h2.jpeg" width="100%" height="100%" />
+          <div class="content">
+            <p>
+              By investing in a
+              <strong>FreshPod helmet washer and dryer</strong> featuring a
+              <span class="highlight">single-chamber cleaning system</span>, you
+              can wash <strong>One motorcycle helmet </strong>.
+              <span class="highlight">It is used by only one user</span>
+            </p>
+            <p>
+              We are excited to present a unique business opportunity that will
+              transform your operations and substantially increase your revenue.
+              <a href="#" class="link"
+                >Introducing the Anti-Rust Helmet Cleaning Machine with dual
+                cleaning slots, Model Number: .</a
+              >
+            </p>
+            <p>
+              This device offers optional mobile payment (scan QR code to
+              activate the machine) or coin-operated features through our
+              payment module. Utilizing
+              <span class="highlight">single-chamber technology</span> (1 helmet
+              cleaning slots), it can handle
+              <strong>One motorcycle helmet</strong>, eliminating customer wait
+              times and doubling your income potential!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------TEAM------>
+    <section id="team">
+      <div class="team">
+        <h1>TEAM</h1>
+        <p></p>
+      </div>
+      <div class="team2">
+        <div class="Responsive">
+          <img src="" />
+        </div>
+      </div>
+    </section>
+   <!------Work-------->
+<section id="work">
+  <div class="work">
+    <h1>Our Work</h1>
+    <p>Take a look at some of our key accomplishments and innovations.</p>
+  </div>
+  <div class="carousel-container">
+    <button class="arrow left-arrow" onclick="moveSlide(-1)">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    <div class="carousel">
+      <img class="carousel-item" src="h3.jpeg" width="100%" height="100%" alt="Work Image 1">
+      <img class="carousel-item" src="h4.jpeg" width="100%" height="100%" alt="Work Image 2">
+      <img class="carousel-item" src="h5.jpeg" width="100%" height="100%" alt="Work Image 3">
+    </div>
+    <button class="arrow right-arrow" onclick="moveSlide(1)">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </div>
+</section>
+
+    <!-- Contact Section -->
+    <div style="background: rgb(245, 245, 245); padding: 60px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1);" class="contact-container"id=cont>
+      <h1 style="margin-top: 0; text-align: center; font-family: 'Times New Roman', Times, serif;">Contact Us</h1>
+      <p style="margin: 10px 0; text-align: center; font-family: 'Times New Roman', Times, serif;">let's get in touch.Send us a message</p>
+      <div class="contact-info">
+        <p style="margin-right: 10px; padding: 10px; font-size: large;"><i style="margin-right: 15px;" class="fas fa-map-marker-alt"></i>Hydrabad</p>
+        <p style="margin-right: 10px; padding: 10px; font-size: large;"><i style="margin-right: 15px;" class="fa fa-phone"></i>phone:=00155515</p>
+        <p style="margin-right: 10px; padding: 10px; font-size: large;"><i style="margin-right: 15px;" class="fa-solid fa-envelope"></i>Hello.freshpod@gmail.com</p>
+      </div>
+      <form style="display: flex; flex-direction: column; padding-top: 50px;" action="#" method="post">
+        <input style="margin-bottom: 15px;padding: 10px; border: 1px solid #ccc; border-radius: 4px;" type="text" name="name" placeholder="Name" required>
+        <input style="margin-bottom: 15px;padding: 10px; border: 1px solid #ccc; border-radius: 4px;" type="email" name="email" placeholder="Email" required>
+        <input style="margin-bottom: 15px;padding: 10px; border: 1px solid #ccc; border-radius: 4px;" type="text" name="subject" placeholder="Subject" required>
+        <textarea style="margin-bottom: 15px;padding: 10px; border: 1px solid #ccc; border-radius: 4px;" name="message" placeholder="Message" required></textarea>
+        <div>
+        <button style="padding: 10px; background: #333; color: white; border: none; border-radius: 0px; cursor: pointer;" type="submit">Send Message</button>
+        </div
+    </form>
+  </div>
+
+
+  
+<!-- Footer -->
+<footer style="background: #000000; color: white; padding: 70px;text-align: center; position: relative;">
+  <div style=" display: flex;  flex-direction: column; align-items: center;" class="footer-container">
+      <a style=" display: inline-block; margin-bottom: 10px; padding: 10px 20px; background: white; color: #333;  border-radius: 4px;  text-decoration: none;" href="#top" class="to-top">To the top</a>
+      <div style="margin-bottom: 10px;" class="social-icons">
+          <a style="color: white; text-decoration: none; font-size: 20px; margin: 0 5px 10px 10px;" href="https://www.instagram.com/freshpod_india" class="fa-brands fa-instagram"></a>
+          <a style="color: white; text-decoration: none; font-size: 20px; margin: 0 5px 10px 10px;" href="#" class="fa-brands fa-twitter"></a>
+          <a style="color: white; text-decoration: none; font-size: 20px; margin: 0 5px 10px 10px;" href="#" class="fa-brands fa-linkedin"></a>
+      </div>
+      <p>Powered by Dharma Rao Palina</p>
+  </div>
+</footer>
+<script src="App.js"></script>
+  </body>
+</html>
