@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FreshPod</title>
-    <link     
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
       integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -12,7 +12,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="App.css" />
-    
+    <script src="App.js"></script>
   </head>
   <body>
     <!-- Navigation Bar -->
@@ -33,6 +33,7 @@
               href="index.html"
               >FreshPod</a
             >
+            <i class="fas fa-bars menu-icon" onclick="toggleMenu()"></i>
             <div class="nav-links">
               <ul>
                 <li><a href="#abt">ABOUT</a></li>
@@ -43,13 +44,24 @@
             </div>
           </nav>
         </section>
+
+        <!-- Mobile Nav -->
+        <div class="mobile-nav" id="mobileNav">
+          <ul>
+            <li><a href="#abt">ABOUT</a></li>
+            <li><a href="#team">TEAM</a></li>
+            <li><a href="#work">WORK</a></li>
+            <li><a href="#cont">CONTACT</a></li>
+          </ul>
+        </div>
       </div>
     </div>
+
     <!------ About ------->
     <section id="abt">
       <div class="about">
         <h1>ABOUT THE COMPANY</h1>
-        <p>key features of our company</p>
+        <p>Key features of our company</p>
       </div>
       <div class="about2">
         <div class="Responsive">
@@ -59,7 +71,7 @@
               By investing in a
               <strong>FreshPod helmet washer and dryer</strong> featuring a
               <span class="highlight">single-chamber cleaning system</span>, you
-              can wash <strong>One motorcycle helmet </strong>.
+              can wash <strong>One motorcycle helmet</strong>.
               <span class="highlight">It is used by only one user</span>
             </p>
             <p>
@@ -83,19 +95,9 @@
         </div>
       </div>
     </section>
-    <!------TEAM------>
-    <section id="team">
-      <div class="team">
-        <h1>TEAM</h1>
-        <p></p>
-      </div>
-      <div class="team2">
-        <div class="Responsive">
-          <img src="" />
-        </div>
-      </div>
-    </section>
-   <!------Work-------->
+
+
+    <!------Work-------->
 <section id="work">
   <div class="work">
     <h1>Our Work</h1>
@@ -116,8 +118,8 @@
   </div>
 </section>
 
-    <!-- Contact Section -->
-    <div style="background: rgb(245, 245, 245); padding: 60px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1);" class="contact-container"id=cont>
+     <!-- Contact Section -->
+     <div style="background: rgb(245, 245, 245); padding: 60px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1);" class="contact-container"id=cont>
       <h1 style="margin-top: 0; text-align: center; font-family: 'Times New Roman', Times, serif;">Contact Us</h1>
       <p style="margin: 10px 0; text-align: center; font-family: 'Times New Roman', Times, serif;">let's get in touch.Send us a message</p>
       <div class="contact-info">
@@ -137,19 +139,68 @@
   </div>
 
 
-  
-<!-- Footer -->
-<footer style="background: #000000; color: white; padding: 70px;text-align: center; position: relative;">
-  <div style=" display: flex;  flex-direction: column; align-items: center;" class="footer-container">
-      <a style=" display: inline-block; margin-bottom: 10px; padding: 10px 20px; background: white; color: #333;  border-radius: 4px;  text-decoration: none;" href="#top" class="to-top">To the top</a>
-      <div style="margin-bottom: 10px;" class="social-icons">
-          <a style="color: white; text-decoration: none; font-size: 20px; margin: 0 5px 10px 10px;" href="https://www.instagram.com/freshpod_india" class="fa-brands fa-instagram"></a>
-          <a style="color: white; text-decoration: none; font-size: 20px; margin: 0 5px 10px 10px;" href="#" class="fa-brands fa-twitter"></a>
-          <a style="color: white; text-decoration: none; font-size: 20px; margin: 0 5px 10px 10px;" href="#" class="fa-brands fa-linkedin"></a>
+    <!-- Footer -->
+    <footer
+      style="
+        background: #000000;
+        color: white;
+        padding: 70px;
+        text-align: center;
+        position: relative;
+      "
+    >
+      <div
+        style="display: flex; flex-direction: column; align-items: center"
+        class="footer-container"
+      >
+        <a
+          style="
+            display: inline-block;
+            margin-bottom: 10px;
+            padding: 10px 20px;
+            background: white;
+            color: #333;
+            border-radius: 4px;
+            text-decoration: none;
+          "
+          href="#top"
+          class="to-top"
+          >To the top</a
+        >
+        <div style="margin-bottom: 10px" class="social-icons">
+          <a
+            style="
+              color: white;
+              text-decoration: none;
+              font-size: 20px;
+              margin: 0 5px 10px 10px;
+            "
+            href="https://www.instagram.com/freshpod_india"
+            class="fa-brands fa-instagram"
+          ></a>
+          <a
+            style="
+              color: white;
+              text-decoration: none;
+              font-size: 20px;
+              margin: 0 5px 10px 10px;
+            "
+            href="#"
+            class="fa-brands fa-twitter"
+          ></a>
+          <a
+            style="
+              color: white;
+              text-decoration: none;
+              font-size: 20px;
+              margin: 0 5px 10px 10px;
+            "
+            href="#"
+            class="fa-brands fa-linkedin"
+          ></a>
+        </div>
+        <p>Powered by Dharma Rao Palina</p>
       </div>
-      <p>Powered by Dharma Rao Palina</p>
-  </div>
-</footer>
-<script src="App.js"></script>
+    </footer>
   </body>
-</html> 
+</html>
